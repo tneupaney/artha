@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 52px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      select, textarea, input[type="text"] {
+		height:26px;
+		font-size:24px;
+		line-height:24px;
+	}
+	
+	input, textarea {
+		width:254px;
+	}
+	
+	input:-moz-placeholder, textarea:-moz-placeholder {
+		color: #DADADA;
+	}
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">हाम्रो बारेमा</a></li>
+          <li><a href="#">सम्पर्क</a></li>
+        </ul>
+        <h3 class="muted">नेपाली शब्दकोष</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>शब्दकोष</h1><br>
+                <form id="submitVal">
+					<fieldset>
+						<input id="word" name="word" type="text" placeholder="शब्द"><br>						
+						<input id="origin" name="origin" type="text" placeholder="शब्दको उत्पत्ती"><br>											
+						<input id="type" name="type" type="text" placeholder="शब्दको किसिम"><br>												
+						<textarea id="meaning" name="meaning" placeholder="शब्दको अर्थ"></textarea><br>											
+						<input id="eg1" name="eg1" type="text" placeholder="उदाहरण (१)"><br>												
+						<input id="eg2" name="eg2" type="text" placeholder="उदाहरण (२)"><br>						
+						<input id="extra" name="extra" type="text" placeholder="थप केहि भए"><br>
+						<br>	
+						<button type="submit" class="btn btn-large btn-success">स्थापित गर्नुहोस्</button>
+					</fieldset>
+				</form>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+	<script src="db.js"></script>
+  </body>
+</html>
