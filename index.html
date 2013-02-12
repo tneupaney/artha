@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>बृहत नेपाली शब्दकोष : Nepali Dictionary</title>
+    <title>बृहत नेपाली शब्दकोष : Comprehensive Nepali Dictionary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="नेपाली भाषाको अनलाईन उपलब्ध शब्दकोष, Free online complete nepali dictionary">
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
   </head>
 	<style>
 	 body {
@@ -16,7 +16,7 @@
 		  /* Custom container */
 		  .container-narrow {
 			margin: 0 auto;
-			max-width: 700px;
+			max-width: 840px;
 		  }
 		  .container-narrow > hr {
 			margin: 30px 0;
@@ -26,10 +26,6 @@
 		  .jumbotron {
 			margin: 60px 0;
 			text-align: center;
-		  }
-		  .jumbotron h1 {
-			font-size: 72px;
-			line-height: 1;
 		  }
 		  .jumbotron .btn {
 			font-size: 21px;
@@ -43,32 +39,41 @@
 		  .marketing p + h4 {
 			margin-top: 28px;
 		  }
+		  
+		  .pancontainer{
+			position:relative; /*keep this intact*/
+			overflow:hidden; /*keep this intact*/
+			width:560px;
+			height:300px;
+			box-shadow:0 2px 4px rgba(0, 0, 0, 0.075) inset;
+			border-radius:3px;
+			border:1px solid #e0e0e0;
+		}
 
 	</style>
   <body>
 
     <div class="container-narrow">
-
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#about-us">हाम्रो बारेमा</a></li>
         </ul>
-        <h3 class="muted">नेपाली शब्दकोष</h3>
       </div>
-
-      <hr>
-
+		<h1>शब्दकोष</h1>
       <div class="jumbotron">
-        <h1>शब्दकोष</h1><br>
-                <form id="submitVal">
+		<div class="pancontainer" data-orient="center" data-canzoom="yes" style="float: left; position: relative; overflow: hidden; cursor: move;">
+		<img id="img-pan" src="img0.png" style="margin-top:10px; margin-left:10px; width: auto; height: auto; position: absolute; left: 0px; top: 0px; display: block;" />
+		</div>
+				 
+            <form id="submitVal">
 					<fieldset>
-						<input id="word" name="word" type="text" placeholder="शब्द"><br>						
-						<input id="origin" name="origin" type="text" placeholder="शब्दको उत्पत्ती"><br>											
-						<input id="type" name="type" type="text" placeholder="शब्दको किसिम"><br>												
-						<textarea id="meaning" name="meaning" placeholder="शब्दको अर्थ"></textarea><br>											
-						<input id="eg1" name="eg1" type="text" placeholder="उदाहरण (१)"><br>												
-						<input id="eg2" name="eg2" type="text" placeholder="उदाहरण (२)"><br>						
-						<input id="extra" name="extra" type="text" placeholder="थप केहि भए"><br>
+						<input class="nepalify" id="word" name="word" type="text" placeholder="शब्द"><br>						
+						<input class="nepalify" id="origin" name="origin" type="text" placeholder="शब्दको उत्पत्ती"><br>						
+						<input class="nepalify" id="type" name="type" type="text" placeholder="शब्दको किसिम"><br>
+						<textarea class="nepalify" id="meaning" name="meaning" placeholder="शब्दको अर्थ"></textarea><br>
+						<input class="nepalify" id="eg1" name="eg1" type="text" placeholder="उदाहरण (१)"><br>
+						<input class="nepalify" id="eg2" name="eg2" type="text" placeholder="उदाहरण (२)"><br>
+						<input class="nepalify" id="extra" name="extra" type="text" placeholder="थप केहि भए"><br>
 						<br>	
 						<button type="submit" class="btn btn-large btn-success">स्थापित गर्नुहोस्</button>
 					</fieldset>
@@ -80,7 +85,7 @@
       <div class="row-fluid marketing">
         <div class="span6" id="about-us">
 		<h1>हामी को हौँ ?</h1>
-          <p>हामी नेपाली भाषालाई <a href="http://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> मा उपयोग हुने गरी काम गर्न खोजी रहेका युवाहरु हौँ।</p>
+          <p>हामी नेपाली भाषालाई <a href="http://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> को लागी उपयोग हुने गरी काम गर्न खोजी रहेका युवाहरु हौँ।</p>
         </div>
 
         <div class="span6">
@@ -90,8 +95,10 @@
       </div>
     </div> <!-- /container -->
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-	<script src="db.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="imagepanner.js"></script>
+    <script type="text/javascript" src="db.js"></script>
+    
+    <script src="https://raw.github.com/suvash/nepalify/master/lib/nepalify.min.js"></script>
   </body>
 </html>
