@@ -34,7 +34,7 @@
 
 		  /* Supporting marketing content */
 		  .marketing {
-			margin: 60px 0;
+			margin: 0px 0;
 		  }
 		  .marketing p + h4 {
 			margin-top: 28px;
@@ -49,6 +49,19 @@
 			border-radius:3px;
 			border:1px solid #e0e0e0;
 		}
+		
+		.selector {
+			margin-bottom: 20px;
+			max-width: 320px;
+			text-align: left;
+		}
+		
+		.selector a {
+			padding-bottom: 8px;
+			padding-left: 8px;
+			padding-right: 8px;
+			padding-top: 8px;
+		}
 
 	</style>
   <body>
@@ -61,6 +74,9 @@
       </div>
 		<h1>शब्दकोष</h1>
       <div class="jumbotron">
+		  <div class="selector">
+			
+		  </div>
 		<div class="pancontainer" data-orient="center" data-canzoom="yes" style="float: left; position: relative; overflow: hidden; cursor: move;">
 		<img id="img-pan" src="img0.png" style="margin-top:10px; margin-left:10px; width: auto; height: auto; position: absolute; left: 0px; top: 0px; display: block;" />
 		</div>
@@ -83,22 +99,21 @@
       <hr>
 
       <div class="row-fluid marketing">
-        <div class="span6" id="about-us">
-		<h1>हामी को हौँ ?</h1>
+        <div class="span12" id="about-us">
+		<h4>हामी को हौँ ?</h4>
           <p>हामी नेपाली भाषालाई <a href="http://en.wikipedia.org/wiki/Natural_language_processing">NLP</a> को लागी उपयोग हुने गरी काम गर्न खोजी रहेका युवाहरु हौँ।</p>
-        </div>
-
-        <div class="span6">
-          <h1>सम्पर्क गर्नुहोस्</h1>
+          <br>
+          <h4>सम्पर्क गर्नुहोस्</h4>
           <p>हामीलाई <a href="http://github.com/tneupaney/artha">github</a> मा सम्पर्क गर्नहोला ।</p>
         </div>
       </div>
     </div> <!-- /container -->
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
     <script type="text/javascript" src="imagepanner.js"></script>
     <script type="text/javascript" src="db.js"></script>
-    
+    <script type="text/javascript" src="dropbox.js"></script>
     <script src="https://raw.github.com/suvash/nepalify/master/lib/nepalify.min.js"></script>
   </body>
 </html>
