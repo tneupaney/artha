@@ -1,4 +1,6 @@
 jQuery(function($) {
+	getAllData();
+	
 	$("#submitVal").submit(function (event) {
 		event.preventDefault();	
 		url = 'https://api.mongolab.com/api/1/databases/dict/collections/col?q={"word":"' 
@@ -25,5 +27,14 @@ jQuery(function($) {
 		
 	function validate() {
 		alert("The word is already inserted");
+	}
+	
+	function getAllData() {
+		$.getJSON("https://api.mongolab.com/api/1/databases/dict/collections/col?f={word:1}&apiKey=aAvjOc288WQNRQzjXnyZRQ_Q0pT5nnkF",
+        function(data){
+          $.each(data, function(i,t){
+            $(".modal-ul").append('<li>' + t.word + '</li>');
+          });
+        });
 	}
 });
