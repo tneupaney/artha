@@ -6,7 +6,7 @@
 
 // v1.1 (March 25th, 10): Updated with ability to zoom in/out of image
 
-//jQuery.noConflict()
+jQuery.noConflict()
 
 var ddimagepanner={
 

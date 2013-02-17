@@ -62,7 +62,27 @@
 			padding-right: 8px;
 			padding-top: 8px;
 		}
-
+		
+		#pSelect {
+			text-align: left;
+			margin-left:-150px;
+			position:absolute;
+		}
+		
+		#pText {
+			font-size:18px;
+			height:26px;
+			text-align:center;
+			width: 50px;
+			margin-left:-10px;
+			margin-top:10px;
+		}
+		
+		.mlevel {
+			font-size: 9px;
+			margin-left: -10px;
+			margin-top: 10px;
+		}
 	</style>
   <body>
 
@@ -74,9 +94,8 @@
       </div>
 		<h1>शब्दकोष</h1>
       <div class="jumbotron">
-		  <div class="selector">
-			
-		  </div>
+		  <div class="selector"></div>
+			<p id="pSelect"></p>
 		<div class="pancontainer" data-orient="center" data-canzoom="yes" style="float: left; position: relative; overflow: hidden; cursor: move;">
 		<img id="img-pan" src="img0.png" style="margin-top:10px; margin-left:10px; width: auto; height: auto; position: absolute; left: 0px; top: 0px; display: block;" />
 		</div>
@@ -110,8 +129,8 @@
     </div> <!-- /container -->
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- <script type="text/javascript" src="jquery.js"></script> -->
     <script type="text/javascript" src="imagepanner.js"></script>
+    <script type="text/javascript" src="jquery.blockUI.js"></script>
     <script type="text/javascript" src="db.js"></script>
     <script type="text/javascript" src="dropbox.js"></script>
     <script src="https://raw.github.com/suvash/nepalify/master/lib/nepalify.min.js"></script>
