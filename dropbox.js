@@ -71,7 +71,7 @@ printSwitch("25-115");
 		var $name = 'http://dl.dropbox.com/u/4337412/' + s[0] + '.png';
 		$('#img-pan').attr("src",$name);
 		printSwitch($(this).attr("name"));
-		$.blockUI({fadeIn: 1000, timeout: 4000,});
+		$.blockUI({fadeIn: 1000, timeout: 8000,});
 	});
 	
 	$('#nextPage').click(function () {
@@ -85,7 +85,7 @@ printSwitch("25-115");
 			var $name = 'http://dl.dropbox.com/u/4337412/' + $thisPage + '.png';
 			$('#img-pan').attr("src",$name);
 			$('#pText').text($thisPage);
-			$.blockUI({fadeIn: 1000, timeout: 4000,});
+			$.blockUI({fadeIn: 1000, timeout: 8000,});
 		}
 	});
 	
@@ -100,7 +100,7 @@ printSwitch("25-115");
 			var $fname = 'http://dl.dropbox.com/u/4337412/' + $thisPage + '.png';
 			$('#img-pan').attr("src",$fname);
 			$('#pText').text($thisPage);
-			$.blockUI({fadeIn: 1000, timeout: 4000,});
+			$.blockUI({fadeIn: 1000, timeout: 8000,});
 		}
 	});
 });
